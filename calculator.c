@@ -9,23 +9,23 @@ int main(){
   while(1){   /* no booleans (1 == true) */
     /* variables must be declared at a block's head */
     char option;
-    double num1, num2, total = 0;
+    double num_1, num_2, total = 0;
     printf("Enter an operation (+, -, *, /) | 'q' to quit: ");
     scanf(" %c", &option);  /* scan in the char input (%c) into the address of option */
     if(option == 'q' || option == 'Q') break;
     printf("Enter number 1 (double): ");
-    scanf(" %lf", &num1);   /* scan in the double input (%lf) into the address of num_1 */
+    scanf(" %lf", &num_1);   /* scan in the double input (%lf) into the address of num_1 */
     printf("Enter number 2 (double): ");
-    scanf(" %lf", &num2);   /* scan in the double input (%lf) into the address of num_2 */
+    scanf(" %lf", &num_2);   /* scan in the double input (%lf) into the address of num_2 */
 
     switch(option){
-      case '+': total = num1 + num2;
+      case '+': total = num_1 + num_2;
       break;
-      case '-': total = num1 - num2;
+      case '-': total = num_1 - num_2;
       break;
-      case '*': total = num1 * num2;
+      case '*': total = num_1 * num_2;
       break;
-      case '/': total = num1 / num2;
+      case '/': total = num_1 / num_2;
       break;
     }
     printf("The result is: %lf\n", total);
