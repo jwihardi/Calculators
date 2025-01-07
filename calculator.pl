@@ -37,4 +37,4 @@ sub calculator{ # doesn't need a function or a "subroutine"
   }
 }
 
-calculator()
+calculator() # call calculator function
