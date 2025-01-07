@@ -34,4 +34,4 @@ function calculator(){ # doesn't need a function
   done
   }
 
-calculator # call calculator function
+calculator # call the calculator function
