@@ -24,4 +24,4 @@ def calculator() -> None: # doesn't need a function | hint at no return
         
         print("The result is", total)
 
-calculator() # call function since python doesn't need an initial function
+calculator() # call calculator function
