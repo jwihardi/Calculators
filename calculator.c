@@ -2,7 +2,7 @@
 
 int main(){
   printf("***************************\n");
-  printf("  SIMPLE CALCULATOR IN C   \n");
+  printf(" A SIMPLE CALCULATOR IN C  \n");
   printf("ENTER INPUTS WITHOUT SPACES\n");
   printf("***************************\n\n\n");
 
