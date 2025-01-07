@@ -1,4 +1,4 @@
-def calculator() -> None: # hint at no return
+def calculator() -> None: # doesn't need a function | hint at no return
     print("***************************")
     print("SIMPLE CALCULATOR IN PYTHON")
     print("ENTER INPUT WITHOUT SPACES")
