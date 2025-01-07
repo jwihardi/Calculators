@@ -1,4 +1,4 @@
-use std::io::{self, Write};     // needed for io::stdin() and io::stdout()
+use std::io::{self, Write}; // needed for io::stdin() and io::stdout()
 
 fn main(){
     println!("***************************");
@@ -10,9 +10,9 @@ fn main(){
         print!("Enter an operation (+, -, *, /) | 'q' to quit: "); 
         io::stdout().flush().unwrap(); 
         let mut input = String::new();
-        let _ = io::stdin().read_line(&mut input);  // get input but ignore return with '_'
-        let option = input.chars().next();  // returns Option<T> of the first char of the input
-        if option == Some('q') || option == Some('Q') { break; }    // Use Some() since it can contain None
+        let _ = io::stdin().read_line(&mut input); // get input but ignore return with '_'
+        let option = input.chars().next(); // returns Option<T> of the first char of the input
+        if option == Some('q') || option == Some('Q') { break; } // Use Some() since it can contain None
        
         print!("Enter number 1 (double): "); 
         io::stdout().flush().unwrap(); 
@@ -31,7 +31,7 @@ fn main(){
             Some('-') => total = num_1 - num_2,
             Some('*') => total = num_1 * num_2,
             Some('/') => total = num_1 / num_2,
-            _ => {  // if option is not valid then continue
+            _ => { // if option is not valid then continue
                 continue;
             }
         }
