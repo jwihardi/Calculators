@@ -1,6 +1,6 @@
-#include <iostream>   // needed for std::cout and std::cin
+#include <iostream> // needed for std::cout and std::cin
 
-using std::cout, std::cin;  // better than doing "using namespace std;"
+using std::cout, std::cin; // better than doing "using namespace std;"
 int main(){
   cout << "**************************\n";
   cout << "A SIMPLE CALCULATOR IN C++\n";
@@ -10,7 +10,7 @@ int main(){
   while(true){
     cout << "Enter an operation (+, -, *, /) | 'q' to quit: ";
     char option;
-    cin >> option;  // get char input
+    cin >> option; // get char input
     if(option == 'q' || option == 'Q') break;
     double num1, num2, total;
     cout << "Enter number 1 (double): ";
