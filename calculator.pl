@@ -1,6 +1,6 @@
 use feature qw(switch); # needed for given($option) althought deprecated
 
-sub calculator{ # doesn't need a function or "subroutine"
+sub calculator{ # doesn't need a function or a "subroutine"
   print "***************************\n";
   print "A SIMPLE CALCULATOR IN PERL\n";
   print "ENTER INPUTS WITHOUT SPACES\n";
