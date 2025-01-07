@@ -1,4 +1,4 @@
-def calculator() -> None:   # hint at no return
+def calculator() -> None: # hint at no return
     print("***************************")
     print("SIMPLE CALCULATOR IN PYTHON")
     print("ENTER INPUT WITHOUT SPACES")
@@ -24,4 +24,4 @@ def calculator() -> None:   # hint at no return
         
         print("The result is", total)
 
-calculator()    # call function since python doesn't need an initial function
+calculator() # call function since python doesn't need an initial function
