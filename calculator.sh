@@ -1,5 +1,5 @@
 #!/bin/bash
-function calculator(){
+function calculator(){ # doesn't need a function
   echo "***************************"
   echo "A SIMPLE CALCULATOR IN BASH"
   echo "ENTER INPUTS WITHOUT SPACES"
@@ -34,4 +34,4 @@ function calculator(){
   done
   }
 
-calculator
+calculator # call calculator function
