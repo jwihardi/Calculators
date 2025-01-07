@@ -1,5 +1,5 @@
-class Calculator  # doesn't need a class
-    def main
+class Calculator # doesn't need a class
+    def main # doesn't need a function
         puts "***************************"
         puts "A SIMPLE CALCULATOR IN RUBY"
         puts "ENTER INPUTS WITHOUT SPACES"
