@@ -4,7 +4,7 @@ class calculator{
   public static void main(String args[]){
     Scanner sc = new Scanner(System.in); // create new Scanner object for user inputs
     System.out.println("***************************");
-    System.out.println(" SIMPLE CALCULATOR IN JAVA "); 
+    System.out.println("A SIMPLE CALCULATOR IN JAVA"); 
     System.out.println("ENTER INPUTS WITHOUT SPACES"); 
     System.out.println("***************************\n\n");
 
