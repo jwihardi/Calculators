@@ -29,17 +29,20 @@
        MAIN-PARAGRAPH.
            DISPLAY "****************************".
            DISPLAY "A SIMPLE CALCULATOR IN COBOL".
+           DISPLAY "ENTER INPUTS WITHOUT SPACES".
            DISPLAY "****************************".
            DISPLAY " ".
            PERFORM UNTIL CONTINUE-FLAG = 'Q' OR CONTINUE-FLAG = 'q'
                DISPLAY "Enter opteration (+, -, *, /) | 'q' to quit: "
+               WITH NO ADVANCING
+      * WITH NO ADVANCING allows the input to be on the same line
                ACCEPT OPERATION
                IF OPERATION = 'Q' OR OPERATION = 'q'
                    MOVE 'Q' TO CONTINUE-FLAG
                ELSE
-                   DISPLAY "Enter number 1 (double): "
+                   DISPLAY "Enter number 1 (double): " WITH NO ADVANCING
                    ACCEPT NUM1
-                   DISPLAY "Enter number 2 (double): "
+                   DISPLAY "Enter number 2 (double): " WITH NO ADVANCING
                    ACCEPT NUM2
                    EVALUATE OPERATION
                        WHEN '+'
@@ -49,7 +52,11 @@
                        WHEN '*'
                            MULTIPLY NUM1 BY NUM2 GIVING TOTAL
                        WHEN '/'
-                           DIVIDE NUM1 BY NUM2 GIVING TOTAL
+                           IF NUM2 = 0
+                                MOVE 0 to TOTAL
+                           ELSE
+                                DIVIDE NUM1 BY NUM2 GIVING TOTAL
+                           END-IF
                        WHEN OTHER
                            DISPLAY "Invalid operation"
                    END-EVALUATE
